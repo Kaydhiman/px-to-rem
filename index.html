@@ -4,21 +4,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>PX to REM & PX to EM</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 	<div class="row pt-5">
 		<div class="col">
 			<p>If you want to convert PX to REM, Please fill The Root Unit(Default 16px) and Element Unit</p>
+			<br />
 		</div>
 	</div>
 
 	<div class="row mb-5">
 		<div class="col-4">
-			<input type="number" class="rootUnit" value="16">
+			<label for="rootUnit">Root Unit</label>
+			<input type="number" name="rootUnit" class="rootUnit" value="16" />
 		</div>
 		<div class="col-4">
-			<input placeholder="Element Unit" type="number" class="elementUnit">
+			<label for="rootUnit">Element Unit</label>
+			<input placeholder="Element Unit" type="number" class="elementUnit" />
 		</div>
 		<div class="col">
 			<button class="convert">Convert</button>
@@ -29,15 +32,18 @@
 	<div class="row">
 		<div class="col">
 			<p>If you want to convert PX to EM, Please fill Parent Unit and Child unit</p>
+			<br />
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="col-4">
-			<input type="number" class="ParentUnit" placeholder="Parent Unit">
+			<label for="rootUnit">Parent Element Unit</label>
+			<input type="number" class="ParentUnit" placeholder="Parent Element Unit" />
 		</div>
 		<div class="col-4">
-			<input type="number" class="childUnit" placeholder="Child Unit">
+			<label for="rootUnit">Child Element Unit</label>
+			<input type="number" class="childUnit" placeholder="Child Element Unit" />
 		</div>
 		<div class="col">
 			<button class="convertToEm">Convert</button>
@@ -50,6 +56,6 @@
 		</div>
 	</div>
 
-	<script src="js/app.js"></script>
+	<script src="./js/app.js"></script>
 </body>
 </html>

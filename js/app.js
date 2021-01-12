@@ -3,7 +3,14 @@
 document.querySelector('.convert').addEventListener('click', function(){
 	var rootUnit = document.querySelector('.rootUnit').value;
 	var elementUnit = document.querySelector('.elementUnit').value;
-	var finalUnit = (rootUnit / elementUnit);
+	var finalUnit = (elementUnit / rootUnit);
+
+	if(finalUnit.toString().length > 5) {
+		finalUnit = finalUnit.toFixed(3);
+	}
+
+	console.log(finalUnit.toString().length)
+
 	document.querySelector('.resultShower').textContent = finalUnit + 'rem';
 });
 
